@@ -1,1 +1,177 @@
+/* =========================
+   ALFRED RAYAN STYLE LUXE
+========================= */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background: #F5F5F5;
+    color:#fff;
+}
+
+/* HEADER */
+
+header{
+    background:#000;
+    text-align:center;
+    padding:25px;
+    border-bottom:2px solid gold;
+}
+
+header h1{
+    color:gold;
+    font-size:3rem;
+    letter-spacing:3px;
+}
+
+header p{
+    margin-top:10px;
+    color:#ccc;
+}
+
+/* HERO */
+
+.hero{
+    height:70vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background:linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("https://images.unsplash.com/photo-1441986300917-64674bd600d8");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h2{
+    font-size:3rem;
+    color:gold;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    max-width:700px;
+    margin:auto;
+}
+
+/* PRODUITS */
+
+.produits{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    padding:50px;
+}
+
+.produit{
+    background:#1a1a1a;
+    border-radius:20px;
+    overflow:hidden;
+    text-align:center;
+    transition:0.4s;
+    box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+.produit:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(255,215,0,0.3);
+}
+
+.produit img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    cursor:pointer;
+}
+
+.produit h3{
+    margin-top:15px;
+    font-size:1.3rem;
+}
+
+.prix{
+    color:gold;
+    font-size:1.4rem;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+/* BOUTON */
+
+button{
+    background:gold;
+    color:black;
+    border:none;
+    padding:12px 25px;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:1rem;
+    font-weight:bold;
+    margin-bottom:20px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:white;
+    transform:scale(1.05);
+}
+
+/* CONTACT */
+
+.contact{
+    background:#111;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.contact h2{
+    color:gold;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.contact p{
+    margin:10px 0;
+    color:#ccc;
+}
+
+/* FOOTER */
+
+footer{
+    background:black;
+    text-align:center;
+    padding:20px;
+    border-top:2px solid gold;
+    color:#999;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2rem;
+    }
+
+    .hero h2{
+        font-size:2rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .produits{
+        padding:20px;
+    }
+}
